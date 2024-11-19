@@ -12,13 +12,19 @@ public class Control {
     }
 
     public void setCanal(int canal) {
-        this.tv.setCanal(canal);
+        if(tv !=null){
+            this.tv.setCanal(canal);
+        }
     }
     public void setVolumen(int volumen) {
-        this.tv.setVolumen(volumen);
+        if(tv != null){
+            this.tv.setVolumen(volumen);
+        }
     }
     public void turnOn(){
-        this.tv.turnOn();
+        if(tv != null){
+            this.tv.turnOn();
+        }
     }
 
     public void turnOff(){
