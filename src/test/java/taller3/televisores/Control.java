@@ -42,7 +42,7 @@ public class Control {
 
     public void enlazar(TV televisor){
         this.tv = televisor;
-        televisor.setControl(this);
+        this.tv.setControl(this);
     }
 
 }
