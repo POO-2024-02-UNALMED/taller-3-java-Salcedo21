@@ -22,24 +22,32 @@ public class Control {
     }
 
     public void turnOff(){
-        this.tv.turnOff();
+        if(tv != null){this.tv.turnOff();
+        }
     }
 
     public void canalUp(){
-         this.tv.canalUp();
+        if(tv != null){
+            this.tv.canalUp();
+        }
     }
 
     public void canalDown(){
-        this.tv.canalDown();
+        if(tv != null){
+            this.tv.canalDown();
+        }
     }
     public void volumenUp(){
+        if(tv !=null){
             this.tv.volumenUp();
+        }
         }
 
     public void volumenDown() {
-        this.tv.volumenDown();
+        if (tv != null) {
+            this.tv.volumenDown();
         }
-
+    }
     public void enlazar(TV televisor){
         this.tv = televisor;
         this.tv.setControl(this);
